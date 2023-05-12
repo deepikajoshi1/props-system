@@ -13,10 +13,17 @@ function App() {
           </p>
         </div>
       </section>
-
-      <ProfileCard title="Alexa" handle="@alexa99" image={AlexaImage} />
-      <ProfileCard title="Cortana" handle="@cortana32" image={CortanaImage} />
-      <ProfileCard title="Siri" handle="@siri01" image={SiriImage} />
+      <div className="columns">
+        <div class="column">
+          <ProfileCard title="Alexa" handle="@alexa99" image={AlexaImage} />
+        </div>
+        <div className="column">
+          <ProfileCard title="Cortana" handle="@cortana32" image={CortanaImage} />
+        </div>
+        <div className="column">
+          <ProfileCard title="Siri" handle="@siri01" image={SiriImage} />
+        </div>
+      </div>
     </div>
   );
 }
